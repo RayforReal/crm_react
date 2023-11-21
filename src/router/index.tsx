@@ -1,19 +1,14 @@
-import About from "@/views/About";
-import Home from "@/views/Home";
+import Login from "@/views/login/index";
 import { RouteObject, Navigate } from "react-router-dom";
 
 const router: RouteObject[] = [
     {
         path: '/',
-        element: <Navigate to={'/home'}/>
+        element: <Navigate to={'/login'}/>
     },
     {
-        path: '/home',
-        element: <Home />
-    },
-    {
-        path: '/about',
-        element: <About />
+        path: '/login',
+        element: <Login />
     },
 ]
 

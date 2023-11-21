@@ -1,10 +1,49 @@
-$color: #eee;
-
-body {
-    background-color: $color;
-    user-select: none;
+body{
+    overflow-y: hidden;
+    color: #000000d9;
+    font-size: 12px;
 }
 
-img{
-    -webkit-user-drag: none;
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: hsla(220, 4%, 58%, 0.3);
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: none;
+}
+
+
+html *{
+    scrollbar-width: thin;
+    scrollbar-color: hsla(220, 4%, 58%, 0.3) transparent;
+}
+
+/* 滚动条滑块 */
+body::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: hsla(220, 4%, 58%, 0.3);
+}
+
+/* 滚动条轨道 */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+
+/* 横竖交叉处的颜色 */
+body::-webkit-scrollbar-corner {
+    background: none;
 }
